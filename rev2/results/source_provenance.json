@@ -1,0 +1,80 @@
+{
+  "base_branch": "revision",
+  "base_commit": "0ca0f06f4d4f855cd9a512a8e839196392372bdc",
+  "source_packages": [
+    "version 2.zip",
+    "Ablation.zip",
+    "03_04.zip",
+    "learning_history_package_20261031.zip",
+    "reconstruction_evaluation.zip"
+  ],
+  "sources": [
+    {
+      "integrated_path": "model.py",
+      "original_file": "Ablation/01_AE64_only/model.py",
+      "original_sha256": "438778048847192c63808524dcee26fe08f8d0e8d6e4fdffd3b7ff56e8f8847c",
+      "integrated_sha256": "f8530fafd44dcc4b3d19d6839d3b6db6961aacfc7a27d443dc915fdff5f04f8c"
+    },
+    {
+      "integrated_path": "train.py",
+      "original_file": "Ablation/01_AE64_only/train.py",
+      "original_sha256": "8c624aec27a93be75222dd86dd85a5bfc38a8d1d2729e3f60f95ed951d24f03e",
+      "integrated_sha256": "20a639e4cdae7b2a775c32c7117a46831fe0f370a51cf13cc90c06c0d0824c4d"
+    },
+    {
+      "integrated_path": "ablation.py",
+      "original_file": "Ablation/01_AE64_only/ablation.py",
+      "original_sha256": "de3e0eadeb491360bd68d8d84dbb2a9c5d01cca746d91c8ad5e38a1ab9fe925a",
+      "integrated_sha256": "478f44c65bf2dabf18545f86ad86a5ac8839ca51712937849635479f8c54c610"
+    },
+    {
+      "integrated_path": "ae64_only.py",
+      "original_file": "Ablation/01_AE64_only/ae64_only.py",
+      "original_sha256": "c6abdedd946dd54ae093fa3a5b146c03ff0a29a29a97742c7852ae48df43bc44",
+      "integrated_sha256": "5090b760abd8727f25c67b199d0dd9e059b7d489f49ffdd3a2a0985f39640cb7"
+    },
+    {
+      "integrated_path": "ae64_simsiam.py",
+      "original_file": "Ablation/02_AE64_to_SimSiam/ae64_simsiam.py",
+      "original_sha256": "cde7ba0c37ef5b048b52acb1250c203c8a6a1c704cfc031fdecf2438809b4387",
+      "integrated_sha256": "c9060bac63dae6bf096034cebfad001f0b025fbda3f04ec82b95ce506aae62e3"
+    },
+    {
+      "integrated_path": "components.py",
+      "original_file": "supplement_03_04/03_SimSiam_from_scratch/components.py",
+      "original_sha256": "ff38559f2f88c00c4a8f87e836cca113ebc54064bd942f1046834eb05212337f",
+      "integrated_sha256": "b5e70e9cb7e191241641b55743e6774fc8ae3ae61d7cb3f033fc7203722a79a4"
+    },
+    {
+      "integrated_path": "train_q9.py",
+      "original_file": "learning_history_package_20261031/train_q9.py",
+      "original_sha256": "6647039b446c1646a9a46f22cf0883ea61fa23985ca3f12e888793caa815202a",
+      "integrated_sha256": "8dca65be4565027fd00512db46957755ef0bd5a9a247d3554509911557a138dc"
+    },
+    {
+      "integrated_path": "plot_q9_curves.py",
+      "original_file": "learning_history_package_20261031/plot_q9_curves.py",
+      "original_sha256": "07566fc2a5e5bded45079f8f38d743ef3937a7ea3e8e5f5f056adca3fe39919a",
+      "integrated_sha256": "69aed8d501362795724c24f879e9efba2bf8e2d192fff2daa7f3b45a4cafa3f7"
+    },
+    {
+      "integrated_path": "predict.py",
+      "original_file": "version 2/predict.py",
+      "original_sha256": "333359fca9d6f7ee2ac8e771e72004b048c7ca100a58e6af7fa6488197e1bc42",
+      "integrated_sha256": "58857e0afeaefc913b2b82a4dd9a39913a56a43cb97fecf781465917cfbf1041"
+    },
+    {
+      "integrated_path": "raw_train.py",
+      "original_file": "version 2/raw_train.py",
+      "original_sha256": "10cb781268a83fbf3ce4198b65c386844fb61f5d45469a5ecd318d64b9ba1e37",
+      "integrated_sha256": "5da2f12e0308bdfffea167763b9bf3b34333837c6a16091e7dfaebf0a68c6a2c"
+    },
+    {
+      "integrated_path": "evaluate_reconstruction.py",
+      "original_file": "reconstruction_evaluation_recovered_20261031/evaluate_phase1_metrics_original.py",
+      "original_sha256": "fbc11ff46295d3d2b824f6a39b488d4af49a2ef4bbc084cd7fac7d6536910b4d",
+      "integrated_sha256": "0d7c8cd3d3ddbea368cd15f88e873f3ff5229b781a83ac0220d729a94b2965a1"
+    }
+  ],
+  "changes": "CLI/path unification, CPU device support, explicit input checks; evaluate.py is new and evaluate_reconstruction.py adapts the recovered evaluator. Model operations and configured schedules/seeds retained. Text files normalized to LF line endings."
+}

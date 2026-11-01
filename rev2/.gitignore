@@ -1,0 +1,12 @@
+# Private experimental assets and generated per-window outputs
+DATA/
+MODELS/
+outputs/
+outputs_*/
+rerun_outputs/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+__pycache__/

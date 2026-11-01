@@ -1,0 +1,8 @@
+{
+  "selected_epoch": 102,
+  "val_correct": 57,
+  "val_n": 80,
+  "val_accuracy": 0.7125,
+  "val_ce": 1.5459911823272705,
+  "criterion": "highest validation accuracy; tie-break by lowest validation cross-entropy"
+}

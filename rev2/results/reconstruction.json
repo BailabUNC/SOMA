@@ -1,0 +1,38 @@
+{
+  "task": "normalized quantized targets corrupted with seeded Gaussian noise sd=0.1",
+  "folds": [
+    {
+      "fold": 1,
+      "split": "heldout",
+      "n_samples": 199,
+      "mse_mean": 0.015994489918364652,
+      "mse_sd": 0.004009671793869591,
+      "nrmse_mean": 0.12545381815888773,
+      "nrmse_sd": 0.015994667729249342,
+      "pearson_r_mean": 0.9045201135640168,
+      "pearson_r_sd": 0.03246746784709479
+    },
+    {
+      "fold": 2,
+      "split": "heldout",
+      "n_samples": 198,
+      "mse_mean": 0.014953215025609942,
+      "mse_sd": 0.00406619958540738,
+      "nrmse_mean": 0.12108811675900161,
+      "nrmse_sd": 0.017055292130784286,
+      "pearson_r_mean": 0.9119926233484288,
+      "pearson_r_sd": 0.03155518346154747
+    },
+    {
+      "fold": 3,
+      "split": "heldout",
+      "n_samples": 198,
+      "mse_mean": 0.016588261579116335,
+      "mse_sd": 0.00485810532922096,
+      "nrmse_mean": 0.12736173824529456,
+      "nrmse_sd": 0.01916374920628689,
+      "pearson_r_mean": 0.8998081599823152,
+      "pearson_r_sd": 0.03794072215752171
+    }
+  ]
+}

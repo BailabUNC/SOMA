@@ -1,0 +1,61 @@
+{
+  "folds": [
+    {
+      "correct": 135,
+      "n": 199,
+      "accuracy": 0.678391959798995,
+      "balanced_accuracy": 0.6912600131350132,
+      "macro_f1": 0.670249227669052
+    },
+    {
+      "correct": 111,
+      "n": 198,
+      "accuracy": 0.5606060606060606,
+      "balanced_accuracy": 0.5705327080327081,
+      "macro_f1": 0.5572495952333414
+    },
+    {
+      "correct": 127,
+      "n": 198,
+      "accuracy": 0.6414141414141414,
+      "balanced_accuracy": 0.6360997798497797,
+      "macro_f1": 0.6300748791174825
+    }
+  ],
+  "summary": {
+    "correct": [
+      135,
+      111,
+      127
+    ],
+    "accuracy": {
+      "mean": 0.6268040539397323,
+      "sd_population": 0.04918313060511328
+    },
+    "macro_f1": {
+      "mean": 0.6191912340066253,
+      "sd_population": 0.04676943111923814
+    },
+    "balanced_accuracy": {
+      "mean": 0.6326308336725003,
+      "sd_population": 0.049347716867158865
+    }
+  },
+  "validation": [
+    {
+      "val_correct": 48,
+      "val_ce": 1.6142123937606812,
+      "epoch": 34
+    },
+    {
+      "val_correct": 42,
+      "val_ce": 2.6225192546844482,
+      "epoch": 142
+    },
+    {
+      "val_correct": 37,
+      "val_ce": 2.4261600971221924,
+      "epoch": 88
+    }
+  ]
+}

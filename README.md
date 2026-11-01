@@ -1,5 +1,13 @@
 # TRAiLL Training Workspace
 
+## Second revision
+
+The integrated second-revision implementation is in [`rev2/`](rev2/README.md).
+It includes the three-stage model, the raw-input baseline, component and matched
+AE64 ablations, learning-history recording, prediction, and reconstruction/C2
+evaluation. Private second-revision datasets and model weights are not distributed.
+The scripts and input conventions documented below belong to the earlier workflow.
+
 This workspace is focused on the three-stage SOMA training pipeline only:
 
 - Phase I: denoising autoencoder

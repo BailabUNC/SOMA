@@ -1,0 +1,46 @@
+{
+  "evaluation": "external",
+  "folds": [
+    {
+      "correct": 98,
+      "n": 204,
+      "accuracy": 0.4803921568627451,
+      "balanced_accuracy": 0.48495370370370366,
+      "macro_f1": 0.4899592608514222
+    },
+    {
+      "correct": 65,
+      "n": 204,
+      "accuracy": 0.31862745098039214,
+      "balanced_accuracy": 0.3298611111111111,
+      "macro_f1": 0.31505578122788247
+    },
+    {
+      "correct": 102,
+      "n": 204,
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.5098379629629629,
+      "macro_f1": 0.49506266636600466
+    }
+  ],
+  "summary": {
+    "correct": [
+      98,
+      65,
+      102
+    ],
+    "accuracy": {
+      "mean": 0.43300653594771243,
+      "sd_population": 0.08127339944735876
+    },
+    "macro_f1": {
+      "mean": 0.43335923614843647,
+      "sd_population": 0.08367911635753264
+    },
+    "balanced_accuracy": {
+      "mean": 0.4415509259259259,
+      "sd_population": 0.07962733048288644
+    }
+  },
+  "provenance": "Collaborator interpretation: participant 2, different day; see README."
+}

@@ -1,0 +1,25 @@
+{
+  "variants": [
+    "saved_ssl",
+    "mild_ssl",
+    "s4_ssl",
+    "lastblock_ssl",
+    "ae_only",
+    "raw"
+  ],
+  "ssl_epochs": 100,
+  "ssl_lr": 0.001,
+  "batch_size": 32,
+  "head_epochs": 220,
+  "head_lr": 0.001,
+  "head_weight_decay": 0.0001,
+  "freeze_first_blocks": 3,
+  "lastblock_freeze_first_blocks": 4,
+  "mild_noise": 0.01,
+  "mild_channel_drop": 0.005,
+  "mild_scale": 0.02,
+  "default_noise": 0.025,
+  "default_channel_drop": 0.02,
+  "default_scale": 0.04,
+  "pretrain_quantization": 0.0
+}

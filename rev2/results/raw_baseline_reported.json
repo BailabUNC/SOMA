@@ -1,0 +1,16 @@
+{
+  "source": "manuscript SI Table S5",
+  "status": "reported summary; no supplied raw-baseline checkpoint was used in integration verification",
+  "accuracy": {
+    "mean": 0.7008,
+    "sd_population": 0.0109
+  },
+  "macro_f1": {
+    "mean": 0.7016,
+    "sd_population": 0.0136
+  },
+  "balanced_accuracy": {
+    "mean": 0.7113,
+    "sd_population": 0.014
+  }
+}
