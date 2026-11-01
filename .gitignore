@@ -45,3 +45,12 @@ playground/*.py
 # Paperwork
 paperwork/
 ai-doc/
+
+# Local research inputs and packaging artifacts
+data/private/
+*.pt
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/

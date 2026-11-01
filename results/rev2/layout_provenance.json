@@ -1,0 +1,163 @@
+{
+  "base_commit": "19a64957a044d352a1c4148e72ba122cc3a08a2e",
+  "scope": "Package/path/documentation reorganization; scientific record values unchanged.",
+  "source_files": [
+    {
+      "path": "src/soma/__init__.py",
+      "sha256": "e8c3fe8b3d7a0903c1cd8cb2c31ce0c4b1479e7d54d74219a1aea33be8a74979"
+    },
+    {
+      "path": "src/soma/__main__.py",
+      "sha256": "412050dc63da736d441bec8aab0358b31f4208c1c05aa767a35c81167dada319"
+    },
+    {
+      "path": "src/soma/cli.py",
+      "sha256": "ceac89cf130a17986e0567d3b3b750b58698400e4664ad2bf88931cb05ff9aa5"
+    },
+    {
+      "path": "src/soma/common.py",
+      "sha256": "cf17ee1d560f0477de633d578fb1a246eaf1414d2f4c1e0618bac4461b98eab4"
+    },
+    {
+      "path": "src/soma/configs/augmentation.json",
+      "sha256": "df48d15d315d3705e27bc54e5a3fc96f7a87b150e1e7bf9e6fa08b074c1bcd80"
+    },
+    {
+      "path": "src/soma/configs/main.json",
+      "sha256": "c00dc5a8e479c3cc62e928e3a50d054cba652ebc08b39fb5109f5964abca3f35"
+    },
+    {
+      "path": "src/soma/data.py",
+      "sha256": "1622c13f9ecd465ba4176ef33725ba3bf75da4b6c674fc2779665c9e8cbf811a"
+    },
+    {
+      "path": "src/soma/evaluation/__init__.py",
+      "sha256": "e8c3fe8b3d7a0903c1cd8cb2c31ce0c4b1479e7d54d74219a1aea33be8a74979"
+    },
+    {
+      "path": "src/soma/evaluation/classification.py",
+      "sha256": "216b09dd8f40ae077f6e75b9edf35e3d19ae24d6c74622725e2dee650265bfbf"
+    },
+    {
+      "path": "src/soma/evaluation/predict.py",
+      "sha256": "9b92141194fdd9905b80458e100a6a2241c7498e6f79974179a1ab3cff0c3baf"
+    },
+    {
+      "path": "src/soma/evaluation/reconstruction.py",
+      "sha256": "bdeba8e2d0ede0ea33c57401f8f81b82bc4a60786b70ee30072e1dd3a0c0817a"
+    },
+    {
+      "path": "src/soma/experiments/__init__.py",
+      "sha256": "e8c3fe8b3d7a0903c1cd8cb2c31ce0c4b1479e7d54d74219a1aea33be8a74979"
+    },
+    {
+      "path": "src/soma/experiments/ae64.py",
+      "sha256": "91643b8b75e7e5deaced91ab277cf868bb5d57b5724244c7267c90439762604c"
+    },
+    {
+      "path": "src/soma/experiments/ae64_simsiam.py",
+      "sha256": "7adaab7bbe966187e777169387a9a53eb990b14afd82ba327c3dc345e87df73e"
+    },
+    {
+      "path": "src/soma/experiments/augmentation.py",
+      "sha256": "85381daab430b8ace66576d77b51a1a75223bc2471f88da85b8429c54599562d"
+    },
+    {
+      "path": "src/soma/experiments/components.py",
+      "sha256": "d0dde9dd8c8598e07b489660187dad1a767ccb65715854096701a37ab16035cb"
+    },
+    {
+      "path": "src/soma/models.py",
+      "sha256": "f5ebd394c687a8ef2b818939ebe3ad53ddecc302306854eb418d13340837644f"
+    },
+    {
+      "path": "src/soma/paths.py",
+      "sha256": "146449062943c036fc91cbc2dc1cb06631aae3b49298e41fd499324b7a1557ba"
+    },
+    {
+      "path": "src/soma/plotting/__init__.py",
+      "sha256": "e8c3fe8b3d7a0903c1cd8cb2c31ce0c4b1479e7d54d74219a1aea33be8a74979"
+    },
+    {
+      "path": "src/soma/plotting/learning_curves.py",
+      "sha256": "6ded7336fdac0b9726a2b1fd2313adafd4a1ec861dd07ed5b42845add5c9feb2"
+    },
+    {
+      "path": "src/soma/training/__init__.py",
+      "sha256": "e8c3fe8b3d7a0903c1cd8cb2c31ce0c4b1479e7d54d74219a1aea33be8a74979"
+    },
+    {
+      "path": "src/soma/training/classifier.py",
+      "sha256": "5c7d86097720645bf808dd3544fdbb47351a8ca0401be03b50e03a9977f6bd51"
+    },
+    {
+      "path": "src/soma/training/history.py",
+      "sha256": "43c682c41a737adc183fec73cd86b54a04ecec748f18eed779f033b79b14935d"
+    },
+    {
+      "path": "src/soma/training/main.py",
+      "sha256": "419536a023fb6012f956b93a4f1042c85bf3e6bbda869270a36a5259ebf34fb4"
+    },
+    {
+      "path": "src/soma/training/raw.py",
+      "sha256": "bdf8b0b730a304a1646d11da056f9708564f0d18bf991e7b6345feea4cdf857d"
+    },
+    {
+      "path": "src/traill_daq/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/traill_daq/activity_profiles.json",
+      "sha256": "84383e8daff87c49e2224502caaaa1ea25ed119aad43322f744b226d2631dcf1"
+    },
+    {
+      "path": "src/traill_daq/benchmark.py",
+      "sha256": "aca406b6bbe267e70db840ac2bca61f94293df17c91db80551da26d03de55e47"
+    },
+    {
+      "path": "src/traill_daq/paper_tapes.json",
+      "sha256": "33d6bc89e4b2618f29c32f5c9e3ed5db1419278aa81d271ae4d81a6687258bf0"
+    },
+    {
+      "path": "src/traill_daq/run.py",
+      "sha256": "7a947293d475bb265ba50df5978078008180b29e4ee09f04486c1e673452860a"
+    },
+    {
+      "path": "src/traill_daq/traill_visualizer.py",
+      "sha256": "657f554be32092da1e057007502b558af0f35a982acddbfd766865fa327da1c3"
+    },
+    {
+      "path": "src/traill_data_preparation/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/traill_data_preparation/channel_reduction.py",
+      "sha256": "a2d2ab0ede12aaaa7e6feb067f740b0e3f126763c25bc5991bf3882b18b1ad28"
+    },
+    {
+      "path": "src/traill_data_preparation/ring_visualization.py",
+      "sha256": "5a3638ae0e14e0564538a133aba95aea79239a7bfe21dfdcdf8d95ad24dc3136"
+    },
+    {
+      "path": "src/traill_data_preparation/traill_dataset.py",
+      "sha256": "b753dd81bba92953dc1a90446808db1b5fa34e9256e30c0adfce17c0a7630e4c"
+    },
+    {
+      "path": "src/traill_data_preparation/traill_dataset_augmentation.py",
+      "sha256": "64e4ee0c38121f57989eca4de68ef72e7f3303349a8ab6678a52ffd43cc9ecf6"
+    },
+    {
+      "path": "src/traill_data_preparation/traill_dataset_concat.py",
+      "sha256": "66a4c2ee0b99ad59e2beec4fa86f0b576f939dfb9c52cf7e280ba705c2abee97"
+    },
+    {
+      "path": "src/traill_data_preparation/traill_loso_session_resplit.py",
+      "sha256": "9564ed9f964900e28059f951bc5c9bb6712bfad850905189681b7edad80124f7"
+    },
+    {
+      "path": "src/traill_data_preparation/utils.py",
+      "sha256": "f28cd0e0f88b3298404d21c8b325ba511be0cc89c1ab3e2fdf08190adcb8f53c"
+    }
+  ],
+  "path_mapping": "docs/path-mapping.json"
+}

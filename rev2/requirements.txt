@@ -1,4 +1,0 @@
-# PyTorch CPU/CUDA wheels should be selected for the local machine.
-torch>=2.6,<2.7
-numpy>=1.26,<3
-scikit-learn>=1.4,<2

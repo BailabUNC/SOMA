@@ -1,38 +1,16 @@
-# TRAiLL Data Folder
+# Data locations
 
-This folder contains various `.pt` files and related data files used for training, validation, and augmentation in the TRAiLL project. Below is an explanation of the types of files you might find here:
+The participant-named CSV recordings and `baseline_arrays/` are historical public
+assets inherited from the earlier repository. CSV content is stored through
+Git LFS; a normal checkout without LFS may contain pointers. Their paths and
+contents are unchanged by the `rev2` code reorganization.
 
-## 1. Raw Dataset Files
-- **Format**: `dataset-{person}-{letter}.pt` or `dataset-{person}-{command}.pt`
-- **Description**: These files contain raw data collected from participants performing specific actions or gestures.
-- **Examples**:
-  - `dataset-john-A.pt`: Data for participant "John" performing the letter "A".
-  - `dataset-john-open.pt`: Data for participant "John" performing the "open" command.
+Second-revision `S1.pt`, `S2.pt`, `S3.pt`, `C2.pt` and weights are private and are
+not added to this repository. Put local copies in ignored `data/private/`, or
+supply an explicit `--data-dir` to the maintained `soma` commands. The authoritative
+shape, label, normalization and split definitions are in [the data guide](../docs/data.md).
 
-## 2. Augmented Dataset Files
-- **Format**: `dataset-{person}-{letter}_{augmentation}.pt`
-- **Description**: These files contain augmented versions of the raw datasets, where transformations like rotation, translation, or noise have been applied.
-- **Examples**:
-  - `dataset-john-A_offset.pt`: Augmented data for "John" performing the letter "A" with an offset transformation.
-  - `dataset-john-B_rotate.pt`: Augmented data for "John" performing the letter "B" with a rotation transformation.
-
-## 3. Concatenated Dataset Files
-- **Format**: `concatenated_dataset-{person}-{pattern}.pt`
-- **Description**: These files are created by concatenating multiple datasets (e.g., all letters or commands) for a specific participant.
-- **Examples**:
-  - `concatenated_dataset-john-letters.pt`: Concatenated dataset for "John" containing all letter data.
-  - `concatenated_dataset-john-commands.pt`: Concatenated dataset for "John" containing all command data.
-
-## 4. Processed Dataset Files
-- **Format**: `processed_dataset-{person}-{pattern}.pt`
-- **Description**: These files contain preprocessed data ready for training or validation, often derived from raw or concatenated datasets.
-- **Examples**:
-  - `processed_dataset-john-letters.pt`: Preprocessed dataset for "John" containing all letter data.
-
-## 5. Augmentation Metadata
-- **Description**: Files containing metadata about the augmentation process, such as parameters used for transformations.
-- **Purpose**: These files may accompany augmented datasets to provide additional context.
-
----
-
-This structure ensures that raw, augmented, and processed datasets are organized and easily accessible for training and evaluation purposes.
+`loso/README.md` documents the earlier mixed pseudo-session workflow. It is not
+a statement that the private second-revision S files were generated that way.
+The current package does not regenerate independent participants from pooled
+windows. Recording preparation tools are documented [here](../src/traill_data_preparation/README.md).

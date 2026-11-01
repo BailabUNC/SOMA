@@ -1,82 +1,48 @@
-# TRAiLL Training Workspace
+# SOMA optical myography research code
 
-## Second revision
+SOMA combines multichannel optical myography acquisition with a three-stage
+representation-learning and gesture-classification pipeline. This `rev2` branch
+contains the maintained second-revision implementation as the installable
+`soma` Python package. Private second-revision data, weights and per-window
+predictions are not included.
 
-The integrated second-revision implementation is in [`rev2/`](rev2/README.md).
-It includes the three-stage model, the raw-input baseline, component and matched
-AE64 ablations, learning-history recording, prediction, and reconstruction/C2
-evaluation. Private second-revision datasets and model weights are not distributed.
-The scripts and input conventions documented below belong to the earlier workflow.
-
-This workspace is focused on the three-stage SOMA training pipeline only:
-
-- Phase I: denoising autoencoder
-- Phase II: SimSiam representation refinement
-- Phase III: downstream end-task classifier
-
-Runtime folders such as `eval/` and `experiments/` are intentionally excluded from this setup.
-
-## Core Scripts
-
-- `path_config.py` - centralized path defaults and fallback resolution
-- `train_phase1_autoencoder.py` - Phase I training
-- `train_phase2_simsiam.py` - Phase II training
-- `train_phase3_end_task.py` - Phase III training
-- `tools/phase3_end_task_lib.py` - shared utilities for Phase III
-
-## Required Directory Layout
-
-```text
-TRAiLL/
-├── data/
-│   ├── .augmented/
-│   └── baseline_arrays/
-├── checkpoints/
-│   ├── phase1/
-│   ├── phase2/simsiam/
-│   ├── phase3/
-│   └── analysis/
-├── outputs/
-│   ├── phase1/{arrays,plots}/
-│   ├── phase2/{arrays,plots}/
-│   ├── phase3/{arrays,plots}/
-│   ├── paper/
-│   └── legacy/
-├── archive/
-│   └── checkpoints/
-├── tools/
-│   ├── __init__.py
-│   └── phase3_end_task_lib.py
-├── path_config.py
-├── train_phase1_autoencoder.py
-├── train_phase2_simsiam.py
-└── train_phase3_end_task.py
-```
-
-## Default Data Dependencies
-
-- Phase I default input:
-  - `data/.augmented/augmented_dataset_letters_group_1_10_std0.15.pt`
-- Phase II default input:
-  - `data/.augmented/augmented_dataset_letters_group_1_50_no_translation.pt`
-- Phase III default inputs:
-  - `data/baseline_arrays/filter_features1.npy`
-  - `data/baseline_arrays/filter_labels1.npy`
-
-## Checkpoint Dependencies
-
-- Phase II requires a Phase I checkpoint:
-  - `checkpoints/phase1/augmented_phase_1.pth`
-- Phase III requires an encoder checkpoint pack (typically containing `"enc"`):
-  - `checkpoints/phase3/model_best.pth`
-
-## Smoke Checks
-
-Run from repository root:
+## Start here
 
 ```bash
-python train_phase1_autoencoder.py --dry-run
-python train_phase2_simsiam.py --help
-python train_phase3_end_task.py --dry-run
-python -m py_compile path_config.py train_phase1_autoencoder.py train_phase2_simsiam.py train_phase3_end_task.py tools/phase3_end_task_lib.py
+python -m pip install -e .
+python -m soma --help
+python -m soma train --data-dir /private/soma/DATA --device cuda
 ```
+
+Use Python 3.12 and the PyTorch 2.6 build appropriate for your machine. Commands
+also accept `--device cpu`. See [Quick start](docs/getting-started.md) for the
+full train/evaluate workflow, optional dependencies and available commands.
+
+## Repository guide
+
+| Location | Purpose |
+|---|---|
+| [src/soma](src/soma/) | Current training, experiments, evaluation, plotting and packaged configs |
+| [src/traill_daq](src/traill_daq/README.md) | Serial acquisition and live visualization |
+| [src/traill_data_preparation](src/traill_data_preparation/README.md) | Recording preparation and exploratory analysis |
+| [hardware](hardware/README.md) | Pico/LED firmware, CAD asset and desktop CAD helpers |
+| [results/rev2](results/rev2/README.md) | Supplied aggregate metrics and training histories |
+| [data](data/README.md) | Historical public assets; private local inputs go in ignored `data/private/` |
+| [tests](tests/) | CPU regression, import and repository-structure tests |
+| [legacy](legacy/README.md) | Earlier training/evaluation implementations retained for reference |
+
+## Documentation
+
+- [Quick start and commands](docs/getting-started.md)
+- [Data contract and evaluation protocol](docs/data.md)
+- [Experiment definitions and reported results](docs/experiments.md)
+- [Repository architecture](docs/repository.md)
+- [Migration from the earlier layout](docs/migration.md)
+- [Validation and limitations](docs/validation.md)
+- [Change history](docs/changelog.md)
+
+Run `python -m unittest discover -s tests -v` after installing the package.
+Start new experiments with the `soma` commands; earlier root-level scripts and
+`experiment/` tools now live under `legacy/` and have different checkpoint and
+experimental definitions. Data identities follow the collaborator's description;
+the legacy pseudo-session generator is not a source of independent participants.
