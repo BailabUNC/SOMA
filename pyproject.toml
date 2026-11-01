@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "soma-traill"
+name = "SOMA"
 version = "0.2.0"
 description = "SOMA optical myography acquisition and second-revision experiments"
 readme = "README.md"

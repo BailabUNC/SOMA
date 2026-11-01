@@ -229,7 +229,7 @@ def main(args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="TRAiLL dataset augmentation.")
+    parser = argparse.ArgumentParser(description="SOMA dataset augmentation.")
     parser.add_argument("data_pt", help="Path to saved (features, labels) tensor file")
     parser.add_argument(
         "--test-type", type=str, default=None, help='Test type (e.g., "letter")'

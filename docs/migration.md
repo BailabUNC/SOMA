@@ -1,5 +1,17 @@
 # Migration from the earlier layout
 
+## Project name
+
+The installable distribution is now named `SOMA`; its import and command remain
+`soma`. Continue installing from this checkout with `python -m pip install -e .`.
+If you previously installed this checkout as `soma-traill`, first remove that
+editable distribution with `python -m pip uninstall soma-traill`, then reinstall
+from the checkout. No checkpoint keys or private asset paths change because of
+the name update. Existing acquisition/preparation module names are retained.
+
+Renaming the GitHub repository is a separate repository-administration action;
+changing this Python metadata does not rename the hosted repository.
+
 This is a directory/import/documentation reorganization of the `rev2` branch,
 not a new scientific experiment. The old `revision` branch and the preceding
 `rev2` commit remain available in Git history. No private input folders are

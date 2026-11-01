@@ -145,7 +145,7 @@ def generate_tensor(datasets: list[TRAiLLDataset]) -> tuple[torch.Tensor, torch.
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Concatenate TRAiLL datasets.")
+    parser = argparse.ArgumentParser(description="Concatenate SOMA datasets.")
     parser.add_argument("person", type=str, help="Name of the participant.")
     parser.add_argument(
         "pattern_name", type=str, help="Name of the pattern to match dataset files."

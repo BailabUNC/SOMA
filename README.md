@@ -6,6 +6,11 @@ contains the maintained second-revision implementation as the installable
 `soma` Python package. Private second-revision data, weights and per-window
 predictions are not included.
 
+The project and installable distribution are named **SOMA** (formerly TRAiLL).
+The Python import and command remain `soma`. Historical `traill_daq` and
+`traill_data_preparation` module names remain available for compatibility;
+they are implementation names rather than separate projects.
+
 ## Start here
 
 ```bash

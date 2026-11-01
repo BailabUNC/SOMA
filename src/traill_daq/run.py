@@ -4,9 +4,9 @@ import sys
 import argparse
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(prog="TRAiLL visualizer")
+    parser = argparse.ArgumentParser(prog="SOMA visualizer")
     parser.add_argument(
-        "--port", type=str, default="COM31", help="Port to connect to TRAiLL."
+        "--port", type=str, default="COM31", help="Port to connect to SOMA."
     )
     parser.add_argument("--path", type=str, default=None, help="Path to save data.")
     parser.add_argument(

@@ -1,5 +1,12 @@
 # Change history
 
+## SOMA project name
+
+- Use SOMA for distribution metadata and current command-line descriptions.
+- Keep `soma` imports/commands and historical acquisition/preparation modules
+  compatible. Checkpoint and dataset formats are unchanged.
+- Repository-hosting renaming remains separate from Python project metadata.
+
 ## Package and repository organization
 
 - Replace the flat `rev2/` scripts with an installable `src/soma/` package and

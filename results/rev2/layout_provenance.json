@@ -120,7 +120,7 @@
     },
     {
       "path": "src/traill_daq/run.py",
-      "sha256": "7a947293d475bb265ba50df5978078008180b29e4ee09f04486c1e673452860a"
+      "sha256": "5d45facc04d9b0dac8400f7c1191eb4493364510ecc56f46b0e9fbd1febe7205"
     },
     {
       "path": "src/traill_daq/traill_visualizer.py",
@@ -144,11 +144,11 @@
     },
     {
       "path": "src/traill_data_preparation/traill_dataset_augmentation.py",
-      "sha256": "64e4ee0c38121f57989eca4de68ef72e7f3303349a8ab6678a52ffd43cc9ecf6"
+      "sha256": "b10cb8b624b1fb039e3d2f61ed6dea3d97dc533e825e33c9b95f5140e8e2402d"
     },
     {
       "path": "src/traill_data_preparation/traill_dataset_concat.py",
-      "sha256": "66a4c2ee0b99ad59e2beec4fa86f0b576f939dfb9c52cf7e280ba705c2abee97"
+      "sha256": "f91d988eceeeec6b1a255d675022c172ee46fb31bcb9ff525074e881e24072d8"
     },
     {
       "path": "src/traill_data_preparation/traill_loso_session_resplit.py",
@@ -159,5 +159,6 @@
       "sha256": "f28cd0e0f88b3298404d21c8b325ba511be0cc89c1ab3e2fdf08190adcb8f53c"
     }
   ],
-  "path_mapping": "docs/path-mapping.json"
+  "path_mapping": "docs/path-mapping.json",
+  "naming": "Installable project metadata and UI use SOMA; historical module names retained."
 }
